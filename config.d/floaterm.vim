@@ -6,7 +6,7 @@ let g:floaterm_autoclose = 1
 let g:floaterm_title = ''
 " noremap <leader>r  :FloatermNew<cr>
 
-hi Floaterm guibg=black
-hi FloatermBorder guibg=orange guifg=cyan
+hi Floaterm guibg=blue
+hi FloatermBorder guibg=red guifg=red
 
-hi FloatermNC guibg=gray
+hi FloatermNC guibg=red

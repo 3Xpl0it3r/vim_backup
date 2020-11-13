@@ -1,5 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
+"dashboard
+Plug 'mhinz/vim-startify'
+
 " 目录树
 Plug 'scrooloose/nerdtree'                                  "目录树
 Plug 'jistr/vim-nerdtree-tabs'
@@ -30,7 +33,7 @@ Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 
 " Plug 'luochen1990/rainbow'
-
+"
 " markdown渲染
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
