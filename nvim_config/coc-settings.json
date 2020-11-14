@@ -1,0 +1,9 @@
+{
+    "diagnostic.enableSign":true,
+    "diagnostic.enableHighlightLineNumber": true,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.messageTarget": "float",
+    "diagnostic.refreshOnInsertMode":true,
+    "diagnostic.refreshAfterSave": true,
+    "diagnostic.separateRelatedInformationAsDiagnostics": true
+}
