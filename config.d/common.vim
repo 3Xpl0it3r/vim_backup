@@ -15,9 +15,3 @@ set number
 set relativenumber
 " set ambiwidth=double
 
-
-colorscheme gruvbox
-colorscheme dracula
-set bg=dark
-set guioptions=                 "去掉两边的scrollbar
-set guifont=Monaco:h17          "设置字体和字的大小
