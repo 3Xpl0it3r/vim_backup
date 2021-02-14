@@ -17,7 +17,7 @@ source ~/.vim/config.d/which-key.vim
 
 " 目录树插件
 " source ~/.vim/config.d/defx.vim
-source ~/.vim/config.d/netrd.vim
+" source ~/.vim/config.d/netrd.vim
 "coc 配置
 source ~/.vim/config.d/coc.vim
 "

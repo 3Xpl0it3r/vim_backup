@@ -1,6 +1,6 @@
 " 文件目录树设置{{
 let NERDTreeShowBookmarks = 1
-" autocmd VimEnter *  NERDTree            "Start nerdtree
+" autocmd VimEnter *  NERDTree            "Start nerdtree // alway  commit it
 autocmd VimEnter *  NERDTreeTabsToggle  "Start nerdtree
 autocmd VimEnter * wincmd l             "Go to Previoud windows
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

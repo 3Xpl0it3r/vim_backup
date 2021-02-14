@@ -1,3 +1,16 @@
+autocmd VimEnter *  Vista
+autocmd BufWinEnter *.go,*.proto,*.cpp Vista
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+
+" set statusline+=%{NearestMethodOrFunction()}
+
+" By default vista.vim never run if you don't call it explicitly.
+"
+" If you want to show the nearest function in your statusline automatically,
+" you can add the following line to your vimrc
+autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 " autocmd VimEnter *  Vista coc<CR>
 " How each level is indented and what to prepend.
 " This could make the display more compact or more spacious.
@@ -13,8 +26,10 @@ let g:vista_default_executive = 'ctags'
 " instead of the default one for these filetypes when using `:Vista` without
 " specifying the executive.
 let g:vista_executive_for = {
-  \ 'cpp': 'vim_lsp',
-  \ 'php': 'vim_lsp',
+  \ 'cpp': 'coc',
+  \ 'go': 'coc',
+  \ 'py': 'coc',
+  \ 'rs': 'coc',
   \ }
 
 " Declare the command including the executable and options used to generate ctags output
